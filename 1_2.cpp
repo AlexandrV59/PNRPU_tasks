@@ -1,24 +1,17 @@
 #include <iostream>
 using namespace std;
-int a,b;
+
 int main()
 {
-    cin >> a;
-    cin >> b;
-    if (a==0)
+    float x, y;
+    cin >> x >> y;
+    if (y != 0)
     {
-        cout << 0;
+        cout << x/y;
     }
     else
     {
-        if (b==0)
-        {
-            cout << "Error";
-        }
-    }
-    if (a!=0 && b!=0)
-    {
-       cout << a/b;
+        cout << "Error";
     }
     return 0;
 }
