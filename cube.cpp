@@ -23,7 +23,20 @@ int main()
             cout<<" "<<endl;
         }
         cout<<"* "<<endl;
+        for (int j =1; j <n-1; j ++)
+        {
+            cout<<" "<<endl;
+        }
+        cout<<"*"<<endl;
+        cout<<"\n"<<endl;
     }
+    // Front
+    
+
+
+
+
+
 
     return 0;
 }
