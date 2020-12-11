@@ -1,26 +1,35 @@
-#include <iostream>
+#include <iostream> // ГОТОА НЕ ДО КОНЦА
 using namespace std;
+int n;
 int main()
 {
-    int side;
-    cin >> side;
-
-    for (int i = 1; i <= side; i++) 
+    cin >> n;
+    for (int i=1; i<=n;i++)
     {
-        for (int j = 1; j <= side; j++) 
-        {
-            if (i == 1 || i == side) 
-                cout << '*';
-            else 
-            {
-                if (j == 1 || j == side) 
-                    cout << '*';
-                else 
-                    cout << ' ';
-            }
-        }  
-        cout << endl; 
-    }  
+        cout << "* ";
+    }
 
+    for (int i=1; i<n; i++)
+    {
+        for (int j=1; j<n; j++)
+        { 
+           if (i<=j)
+           {
+               cout << " ";
+           }
+           else
+           {
+               cout << "* "; 
+               break;
+           }    
+        }
+        cout << "\n";
+    }
+
+    for (int i=1; i<=n; i++)
+    {
+        cout << "* ";
+    }
     return 0;
 }
+
