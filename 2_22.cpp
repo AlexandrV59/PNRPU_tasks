@@ -6,7 +6,6 @@ int number;
 float maxi = INT_MIN;
 int main()
 {
-
     cout << "Enter: ";
     cout << endl;
     cout << endl;
